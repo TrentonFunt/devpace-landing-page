@@ -24,7 +24,7 @@ A semantic, accessible landing page template for a development platform. This RE
 ### Installation
 1. Clone the repository:
   ```bash
-   git clone https://github.com/yourusername/devpace-landing-page.git
+  git clone https://github.com/yourusername/devpace-landing-page.git
 
 2. Open in browser:
   ```bash
