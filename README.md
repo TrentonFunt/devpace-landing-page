@@ -26,10 +26,13 @@ A semantic, accessible landing page template for a development platform. This RE
   ```bash
    git clone https://github.com/yourusername/devpace-landing-page.git
 
+---
+
 2. Open in browser:
   ```bash
   cd devpace-landing-page && open index.html
 
+---
 ## Structure
 devpace-landing-page/
 ├── index.html          # Main landing page
