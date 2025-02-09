@@ -61,7 +61,9 @@ To modify the page:
 2. Update Content
   Modify HTML text in these sections:
 
-  - Hero section (<section class="hero">)
+  - Hero section
+    ```html
+    (<section class="hero">)
 
   - Testimonials (<section id="testimonials">)
 
