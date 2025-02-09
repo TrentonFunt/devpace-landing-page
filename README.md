@@ -2,8 +2,8 @@
 
 A modern, responsive landing page for DevPace—a development platform—built with semantic HTML5 and CSS3. Designed to showcase key product features, testimonials, and drive user conversions.
 
-![DevPace Landing Page Screenshot](/assets/images/devpace-screenshot-1.png)
-![DevPace Landing Page Screenshot](/assets/images/devpace-screenshot-2.png)
+![DevPace Landing Page Screenshot](./assets/images/devpace-screenshot-1.png)
+![DevPace Landing Page Screenshot](./assets/images/devpace-screenshot-2.png)
 
 ## Features
 
