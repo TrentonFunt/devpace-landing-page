@@ -61,13 +61,13 @@ To modify the page:
 2. Update Content
   Modify HTML text in these sections:
 
-  - Hero section
+  - Hero section:
     ```html
     (<section class="hero">)
 
-  - Testimonials (<section id="testimonials">)
-
-  - Footer contact info (<section class="contact-info">)
+  - Footer contact info:
+    ```html
+    (<section class="contact-info">)
 
 3. Adjust Layout
   Modify these CSS classes:
