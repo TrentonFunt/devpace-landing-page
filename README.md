@@ -38,3 +38,41 @@ A modern, responsive landing page for DevPace—a development platform—built w
    git clone https://github.com/your-username/devpace-landing-page.git
 
 2. Open in Broswer:
+   ```bash
+   cd devpace-landing-page && open index.html
+
+## Usage
+
+  - Navigation: Click dropdown menus to explore sections
+
+  - Responsive Test: Resize browser to see mobile/tablet layouts
+
+  - CTAs: "Try Free" buttons link to /free-trial
+
+  - Social Links: Click footer icons to visit social profiles
+
+## Customization
+
+To modify the page:
+
+1. Change Colors
+  Edit CSS color values directly (search for hex codes like #2563eb).
+
+2. Update Content
+  Modify HTML text in these sections:
+
+  - Hero section (<section class="hero">)
+
+  - Testimonials (<section id="testimonials">)
+
+  - Footer contact info (<section class="contact-info">)
+
+3. Adjust Layout
+  Modify these CSS classes:
+
+  - Grid layouts: .features-grid, .key-stats
+
+  - Spacing: padding/margin values
+
+  - Breakpoints: @media queries
+
