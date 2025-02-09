@@ -6,8 +6,82 @@
   <title>DevPace</title>
 </head>
 <body>
-  <header>
-  </header>
-  
-</body>
+    <header>
+      <nav aria-label="Main navigation">
+        <div class="logo-wrapper">
+          <a href="/">
+            <img src="logo.png" alt="DevPace logo" width="200" height="40">
+          </a>
+        </div>
+
+        <!-- Main navigation dropdowns -->
+        <div class="nav-menu">
+          <div class="dropdown">
+            <button aria-expanded="false" aria-controls="products-dropdown">
+              Products
+            </button>
+            <div id="products-dropdown">
+              <ul>
+                <li><a href="/product-features">Features</a></li>
+                <li><a href="/integrations">Integrations</a></li>
+                <li><a href="/api">API</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <button aria-expanded="false" aria-controls="solutions-dropdown">
+              Solutions
+            </button>
+            <div id="solutions-dropdown">
+              <ul>
+                <li><a href="/teams">For Teams</a></li>
+                <li><a href="/enterprise">Enterprise</a></li>
+                <li><a href="/startups">For Startups</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <button aria-expanded="false" aria-controls="resources-dropdown">
+              Resources
+            </button>
+            <div id="resources-dropdown">
+              <ul>
+                <li><a href="/documentation">Documentation</a></li>
+                <li><a href="/blog">Blog</a></li>
+                <li><a href="/webinars">Webinars</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <button aria-expanded="false" aria-controls="pricing-dropdown">
+              Pricing
+            </button>
+            <div id="pricing-dropdown">
+              <ul>
+                <li><a href="/plans">Plans</a></li>
+                <li><a href="/faq">FAQ</a></li>
+                <li><a href="/contact-sales">Contact Sales</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Auth buttons -->
+        <div class="auth-buttons">
+          <a href="/login" class="button login-button" role="button">Log In</a>
+          <a href="/free-trial" class="button cta-button" role="button">Try DevPace Free</a>
+        </div>
+      </nav>
+
+      <!-- Hero Section -->
+      <section class="hero" aria-labelledby="hero-heading">
+        <h1 id="hero-heading">Accelerate Your Development Process</h1>
+        <p>Streamline your workflow with DevPace's all-in-one development platform</p>
+        <a href="/free-trial" class="button cta-button" role="button">Start Your Free Trial</a>
+      </section>
+    </header>
+  </body>
 </html>
