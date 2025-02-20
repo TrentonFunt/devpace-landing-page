@@ -51,6 +51,24 @@ nav {
   transform: translateY(-2px);
 }
 
+.dropdown div {
+  display: none;
+  position: absolute;
+  background: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  z-index: 1000;
+}
+
+.dropdown:hover div {
+  display: block;
+}
+
+.dropdown button[aria-expanded="true"]+div {
+  display: block;
+}
+
 .auth-buttons {
   display: flex;
   gap: 1rem;
