@@ -214,8 +214,7 @@
     </div>
   </footer>
   <script>
-    // Dropdown interaction
-    document.addEventListener('DOMContentLoaded', () => {
+   document.addEventListener('DOMContentLoaded', () => {
       const dropdowns = document.querySelectorAll('.dropdown');
 
       dropdowns.forEach(dropdown => {
@@ -224,18 +223,30 @@
 
         button.addEventListener('click', (e) => {
           e.stopPropagation();
+
+          // Close all dropdowns first
+          dropdowns.forEach(otherDropdown => {
+            if (otherDropdown !== dropdown) {
+              otherDropdown.querySelector('button').setAttribute('aria-expanded', 'false');
+              otherDropdown.querySelector('div').style.display = 'none';
+            }
+          });
+
+          // Toggle current dropdown
           const isExpanded = button.getAttribute('aria-expanded') === 'true';
           button.setAttribute('aria-expanded', !isExpanded);
           menu.style.display = isExpanded ? 'none' : 'block';
         });
+      });
 
-        // Close dropdown when clicking outside
-        document.addEventListener('click', (e) => {
-          if (!dropdown.contains(e.target)) {
-            button.setAttribute('aria-expanded', 'false');
-            menu.style.display = 'none';
-          }
-        });
+      // Close dropdowns when clicking outside
+      document.addEventListener('click', (e) => {
+        if (!e.target.closest('.dropdown')) {
+          dropdowns.forEach(dropdown => {
+            dropdown.querySelector('button').setAttribute('aria-expanded', 'false');
+            dropdown.querySelector('div').style.display = 'none';
+          });
+        }
       });
     });
   </script>
