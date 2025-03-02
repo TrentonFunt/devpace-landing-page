@@ -140,6 +140,20 @@
           </article>
         </div>
       </section>
+      <section id="pricing-calculator" aria-labelledby="calculator-heading">
+        <h2 id="calculator-heading">Estimate Your Costs</h2>
+        <div class="calculator-container">
+          <div class="tier-selector">
+            <button class="tier-option active" data-price="0">Starter</button>
+            <button class="tier-option" data-price="49">Pro</button>
+            <button class="tier-option" data-price="99">Enterprise</button>
+          </div>
+          <div class="price-display">
+            <span id="calculated-price">$0</span>
+            <span>/month</span>
+          </div>
+        </div>
+      </section>
     </main>
     <footer aria-labelledby="footer-heading">
     <h2 id="footer-heading" class="visually-hidden">Contact Us</h2>
@@ -248,6 +262,15 @@
           });
         }
       });
+
+      document.querySelectorAll('.tier-option').forEach(button => {
+       button.addEventListener('click', () => {
+         document.querySelectorAll('.tier-option').forEach(b => b.classList.remove('active'));
+         button.classList.add('active');
+         const price = button.dataset.price;
+         document.getElementById('calculated-price').textContent = `$${price}`;
+       });
+     });
     });
   </script>
   </body>

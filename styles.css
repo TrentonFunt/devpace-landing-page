@@ -184,6 +184,40 @@ nav {
   font-weight: bold;
 }
 
+/* Add to CSS */
+#pricing-calculator {
+  padding: 4rem 0;
+  background: #f1f5f9;
+  text-align: center;
+}
+
+.tier-selector {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.tier-option {
+  padding: 1rem 2rem;
+  border: 2px solid #cbd5e1;
+  border-radius: 0.5rem;
+  background: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.tier-option.active {
+  border-color: #2563eb;
+  background: #eff6ff;
+}
+
+.price-display {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #1e293b;
+}
+
 /* ===== Footer Styles ===== */
 footer {
   background: #1e293b;
